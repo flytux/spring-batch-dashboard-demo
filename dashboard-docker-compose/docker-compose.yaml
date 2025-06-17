@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+    - 'POSTGRES_DB=spring_batch'
+    - 'POSTGRES_PASSWORD=password'
+    - 'POSTGRES_USER=admin'
+    ports:
+    - '5432:5432'
+    volumes:
+    - './schema-postgresql.sql:/docker-entrypoint-initdb.d/schema-postgresql.sql'
+  dashboard:
+    image: "ghcr.io/making/spring-batch-dashboard:jvm"
+    environment:
+      - "SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/spring_batch"
+      - "SPRING_DATASOURCE_USERNAME=admin"
+      - "SPRING_DATASOURCE_PASSWORD=password"
+      - "SPRING_SECURITY_USER_NAME=admin"
+      - "SPRING_SECURITY_USER_PASSWORD=admin"
+    ports:
+      - "8080:8080"

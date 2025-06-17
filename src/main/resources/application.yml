@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-batch-demo
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/spring_batch
+    username: admin
+    password: password
+  batch:
+    job:
+      enabled: false
+  sql:
+    init:
+      platform: postgresql
+      enabled: true
+      mode: always
+      schema-locations: classpath:sample-schema.sql

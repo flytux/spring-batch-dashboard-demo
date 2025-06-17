@@ -1,0 +1,5 @@
+example/springbatchdemo/sample/JobCompletionNotificationListener.class
+example/springbatchdemo/sample/PersonBatchConfig.class
+example/springbatchdemo/SpringBatchDemoApplication.class
+example/springbatchdemo/sample/Person.class
+example/springbatchdemo/sample/PersonItemProcessor.class

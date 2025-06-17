@@ -1,0 +1,5 @@
+/root/works/spring-batch-demo-simple/src/main/java/example/springbatchdemo/SpringBatchDemoApplication.java
+/root/works/spring-batch-demo-simple/src/main/java/example/springbatchdemo/sample/JobCompletionNotificationListener.java
+/root/works/spring-batch-demo-simple/src/main/java/example/springbatchdemo/sample/Person.java
+/root/works/spring-batch-demo-simple/src/main/java/example/springbatchdemo/sample/PersonBatchConfig.java
+/root/works/spring-batch-demo-simple/src/main/java/example/springbatchdemo/sample/PersonItemProcessor.java
